@@ -82,6 +82,7 @@ raisedCard.innerHTML = `<h2>$${GAMES_JSON.reduce((total, game) => total + game.p
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+gamesCard.innerHTML = `<h2>${GAMES_JSON.length}</h2>`;
 
 
 /*************************************************************************************
