@@ -159,7 +159,7 @@ const unfundedGamesCount = GAMES_JSON.filter(game => game.pledged < game.goal).l
 const unfundedGamesString = unfundedGamesCount === 0 ? "all" : unfundedGamesCount;
 
 // create a new DOM element containing the template string and append it to the description container
-const description = document.createElement("p");
+const description = document.createElement("div");
 
 description.innerHTML = `A total of $${GAMES_JSON.reduce((total, game) => total + game.pledged, 0).toLocaleString()} has been raised for ${GAMES_JSON.length} games. Currently, ${unfundedGamesString} games remain unfunded. We need your help to fund these amazing games!`;
 
