@@ -121,6 +121,8 @@ function filterFundedOnly() {
 
 }
 
+document.addEventListener('DOMContentLoaded', filterFundedOnly);
+
 // show all games
 function showAllGames() {
     deleteChildElements(gamesContainer);
